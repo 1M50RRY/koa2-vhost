@@ -12,13 +12,13 @@ const path = require('path')
  * path to default folder (in case if none of hostnames matched this one will be used) - not required
 */
 
-module.exports = (hostnames, static_dir, default_hostname = '') => {
+module.exports = (hostnames, static_dir, default_dir = '') => {
     return async (ctx, next) => {
         try {
             // If there is a koa-static middleware get its index
             const serve_index = ctx.app.middleware.findIndex(func => func.name === 'serve')
             // Use default hostname if no matches
-            const hostname = hostnames.includes(ctx.hostname) ? ctx.hostname : default_hostname
+            const hostname = hostnames[ctx.hostname] ? hostnames[ctx.hostname] : default_dir
             // Compose path to static folder using hostname (must be the same as hostname)
             const static_middleware = serve(path.join(static_dir, hostname))
 

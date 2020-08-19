@@ -1,6 +1,6 @@
 {
   "name": "koa2-vhost",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Middleware to help you with mapping hostnames to folders with static stuff",
   "main": "index.js",
   "scripts": {
