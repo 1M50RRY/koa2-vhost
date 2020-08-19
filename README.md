@@ -7,7 +7,7 @@ Koa2 middleware to map hostnames to static folders
 ```javascript
 const Koa = require('koa')
 const path = require('path')
-const vhost = require('koa-vhost')
+const vhost = require('koa2-vhost')
 const STATIC_DIR = process.env.STATIC_DIR || 'static'
 
 /* Arguments
