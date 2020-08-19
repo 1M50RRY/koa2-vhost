@@ -1,0 +1,33 @@
+{
+  "name": "koa2-vhost",
+  "version": "1.0.0",
+  "description": "Middleware to help you with mapping hostnames to folders with static stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1M50RRY/koa2-vhost.git"
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "vhost",
+    "virtual",
+    "host",
+    "mapping",
+    "host",
+    "to",
+    "static"
+  ],
+  "author": "Atsamaz Gatsoev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1M50RRY/koa2-vhost/issues"
+  },
+  "homepage": "https://github.com/1M50RRY/koa2-vhost#readme",
+  "dependencies": {
+    "koa-static": "^5.0.0"
+  }
+}
