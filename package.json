@@ -29,5 +29,6 @@
   "homepage": "https://github.com/1M50RRY/koa2-vhost#readme",
   "dependencies": {
     "koa-static": "^5.0.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }

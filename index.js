@@ -4,8 +4,9 @@
  * Module dependencies.
  */
 const serve = require('koa-static')
+const path = require('path')
 
-module.exports = (hostnames, app) => {
+module.exports = (hostnames, app, static_dir) => {
     return async (ctx, next) => {
         try {
             // If there is a koa-static middleware get its index
@@ -13,7 +14,7 @@ module.exports = (hostnames, app) => {
             // Skip if no hostname matches
             if (!hostnames.includes(ctx.hostname)) return await next()
             // Compose path to static folder using hostname (must be the same as hostname)
-            const static_middleware = serve(path.join(__dirname, STATIC_DIR, ctx.hostname))
+            const static_middleware = serve(path.join(__dirname, static_dir, ctx.hostname))
 
             if (serve_index > -1) {
                 // Replace existing koa-static with the new one
