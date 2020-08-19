@@ -10,7 +10,7 @@ const path = require('path')
 const vhost = require('koa-vhost')
 const STATIC_DIR = process.env.STATIC_DIR || 'static'
 
-app.use(vhost(["example.com", "example2.com", "example3.com"], app, STATIC_DIR))
+app.use(vhost(["example.com", "example2.com", "example3.com"], app, STATIC_DIR, 'default'))
 
 module.exports = app.listen(config.port, () => {
   console.log(`Listening on http://localhost:${config.port}`)
@@ -24,5 +24,7 @@ static
 └── example2.com
     └── index.html
 └── example3.com
+    └── index.html
+└── default
     └── index.html
 ```
