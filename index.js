@@ -7,7 +7,7 @@ const serve = require('koa-static')
 const path = require('path')
 
 /* Arguments
- * list of hostnames (you need to create folders in static directory with the same names) - required
+ * object of hostnames mapped to folders (you need to create folders in static directory with the same names) - required
  * path to your static directory - required
  * path to default folder (in case if none of hostnames matched this one will be used) - not required
 */
