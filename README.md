@@ -1,5 +1,5 @@
 # koa2-vhost
-Koa2 middleware to map hostnames to static folders
+Koa2 middleware to map hostnames to static folders (https://www.npmjs.com/package/koa2-vhost)
 
 ## Install package
 `npm i --save koa2-vhost`
